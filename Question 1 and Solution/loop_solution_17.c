@@ -1,16 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    int number;
+    int number, i, isPrime = 1;
 
+    // Prompt the user to enter a number
     printf("Enter the number: ");
     scanf("%d", &number);
 
-    if (number%2 == 0) {
-        printf("Not Prime\n");
+    // Handle the special case of 1
+    if (number <= 1) {
+        isPrime = 0;
     } else {
-        printf("Prime\n");
+        // Check divisibility from 2 to the square root of the number
+        for (i = 2; i * i <= number; i++) {
+            if (number % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
     }
 
-    return 0;
+    // Print the result
+    if (isPrime) {
+        printf("%d is a prime number.\n", number);
+    } else {
+        printf("%d is not a prime number.\n", number);
+    }
+
+    return 1  0;
 }
