@@ -4,15 +4,20 @@ int main() {
     int i, numberOfStudents;
     float a, hw, ct, mt, tf, totalNumber;
 
+    // Get the number of students from the user
     printf("Number of students: ");
     scanf("%d", &numberOfStudents);
 
-    for (i=1; i <= numberOfStudents; i++){
-        printf("Enetr the marks of A HW CT MT TF: ");
+    // Iterate through each student
+    for (i = 1; i <= numberOfStudents; i++) {
+        // Get the marks for the current student
+        printf("Enter the marks of A HW CT MT TF for Student %d: ", i);
         scanf("%f%f%f%f%f", &a, &hw, &ct, &mt, &tf);
 
-        totalNumber = ((a * (5.0/5)) + (hw * (10.0/10)) + (ct * (15.0/15)) + (mt * (30.0/50)) + (tf * (40.0/100)));
+        // Calculate the total number based on the given weights
+        totalNumber = ((a * (5.0 / 5)) + (hw * (10.0 / 10)) + (ct * (15.0 / 15)) + (mt * (30.0 / 50)) + (tf * (40.0 / 100)));
 
+        // Determine the grade based on the total number
         if (totalNumber >= 90 && totalNumber <= 100) {
             printf("Student %d: A\n", i);
         } else if (totalNumber >= 86 && totalNumber <= 89) {
@@ -31,9 +36,7 @@ int main() {
             printf("Student %d: C-\n", i);
         } else if (totalNumber >= 58 && totalNumber <= 61) {
             printf("Student %d: D+\n", i);
-        } else if (totalNumber >= 55 && totalNumber <= 57) {
-            printf("Student %d: D\n", i);
-        } else {
+        } else if (totalNumber <= 57) {
             printf("Student %d: F\n", i);
         }
     }
