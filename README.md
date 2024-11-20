@@ -1,6 +1,12 @@
 # Loop Related Problems and Solutions
 
-This repository contains solutions to 20 loop-related programming problems, designed to improve logical thinking and coding skills. Each problem explores different aspects of loops and algorithm development.
+This repository contains a collection of 20 loop-related programming problems and their solutions. The problems and solutions are organized into the `Question 1 and Solution` folder for ease of access. Each problem is designed to improve your programming and problem-solving skills, focusing on loops and basic algorithms.
+
+---
+
+## Folder Structure
+
+- **`Question 1 and Solution/`**: Contains both problem statements and their corresponding solutions. Each problem and its solution are paired for easy navigation.
 
 ---
 
