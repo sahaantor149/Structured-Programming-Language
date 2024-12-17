@@ -96,54 +96,69 @@ Solution Number 03 -> a
 // int main() {
 //     int n, term, sum = 0;
 
-//     // Input: Number of terms in the series
 //     printf("Enter the number of terms (n): ");
 //     scanf("%d", &n);
 
 //     printf("Series: ");
 
-//     // Loop to generate and print the series
 //     for (int i = 1; i <= n; i++) {
-//         term = 4 * i * i - 7 * i + 3; // Formula: 4n^2 - 7n + 3
+//         term = 4 * i * i - 7 * i + 3;
 //         printf("%d", term);
         
 //         if (i < n) {
 //             printf(", ");
 //         }
         
-//         sum += term; // Add the current term to the sum
+//         sum += term;
 //     }
 
-//     printf("\nSum of the series: %d\n", sum); // Print the sum of the series
+//     printf("\nSum of the series: %d\n", sum);
 
 //     return 0;
 // }
 
-#include <stdio.h>
-
-int main() {
-    int n;
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
-
-    for (int i = 1; i <= n; i++) {
-        // Printing "H"s in the first and last row
-        if (i == 1 || i == n) {
-            printf("H ");
-        } else {
-            // Printing "H"s with spaces for the middle rows
-            for (int j = 1; j <= n; j++) {
-                if (j == 1 || j == n) {
-                    printf("H ");
-                } else {
-                    printf("  ");  // For spaces
-                }
-            }
-        }
-        printf("\n");
-    }
-
-    return 0;
-}
+/*
+***********************
+Solution Number 03 -> b
+***********************
 
 
+Initial Values:
+    i = undefined
+    j = undefined
+    count = 0
+    n = 4
+
+Iteration Table:
+
+    | Step |  i  |  j  |  Count  |
+    |------|---  |---  |-------  |
+    | 1    |  1  |  -  |    0    |
+    | 2    |  1  |  1  |    1    |
+    | 3    |  1  |  2  |    2    |
+    | 4    |  1  |  3  |    3    |
+    | 5    |  1  |  -  |    0    |
+    | 6    |  2  |  -  |    0    |
+    | 7    |  2  |  1  |    1    |
+    | 8    |  2  |  2  |    2    |
+    | 9    |  2  |  -  |    0    |
+    | 10   |  3  |  -  |    0    |
+    | 11   |  3  |  1  |    1    |
+    | 12   |  3  |  -  |    0    |
+    | 13   |  4  |  -  |    0    |
+    | 14   |  4  |  -  |    0    |
+
+Final Output:
+
+At the end of the program:
+    1. The variables i, j, and count reset as per the loop logic.
+    2. The final values are:
+        1. i = 5 (loop exits as i > n).
+        2. j = - (no value as the inner loop is done).
+        3. count = 0 (reset by count = 0).
+
+
+
+***********************
+Solution Number 04 -> a
+***********************
