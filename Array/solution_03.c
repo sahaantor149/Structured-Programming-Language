@@ -6,15 +6,15 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &n);
 
-    int arr[n];
+    int array[n];
 
     for (int i = 0; i <= n - 1; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &array[i]);
     }
 
     for (int i = 0; i <= n - 1; i++) {
-        if (arr[i]%2 == 0)
-            sum += arr[i];
+        if (array[i]%2 == 0)
+            sum += array[i];
     }
 
     printf("%d", sum);

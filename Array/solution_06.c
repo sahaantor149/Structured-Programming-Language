@@ -6,22 +6,22 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &n);
 
-    int arr1[n], arr2[n], arr3[n];
+    int array1[n], array2[n], array3[n];
 
     for (int i = 0; i <= n - 1; i++) {
-        scanf("%d", &arr1[i]);
+        scanf("%d", &array1[i]);
     }
 
     for (int i = 0; i <= n - 1; i++) {
-        scanf("%d", &arr2[i]);
+        scanf("%d", &array2[i]);
     }
 
     for (int i = 0; i <= n - 1; i++) {
-        arr3[i] = arr1[i] + arr2[i];
+        array3[i] = array1[i] + array2[i];
     }
 
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr3[i]);
+        printf("%d ", array3[i]);
     }
 
     return 0;

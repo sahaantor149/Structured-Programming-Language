@@ -6,23 +6,23 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &n);
 
-    int arr[n];
+    int array[n];
 
     printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &array[i]);
     }
 
-    int max = arr[0], min = arr[0];
+    int max = array[0], min = array[0];
     int maxIndex = 0, minIndex = 0;
 
     for (int i = 1; i < n; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+        if (array[i] > max) {
+            max = array[i];
             maxIndex = i;
         }
-        if (arr[i] < min) {
-            min = arr[i];
+        if (array[i] < min) {
+            min = array[i];
             minIndex = i;
         }
     }
