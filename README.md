@@ -24,6 +24,7 @@ This repository contains various C programming exercises and solutions collected
 |    |—— loop_solution_[1-20].c
 |—— Mid Exam Practice
 |    |—— SPL Question Patterns.pdf
+|    |—— patterns.c
 |    |—— problem_02_01.c
 |    |—— problem_02_02.c
 |    |—— problem_02_03.c
