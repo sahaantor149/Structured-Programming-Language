@@ -36,6 +36,10 @@ This repository contains various C programming exercises and solutions collected
 |—— Nested Loop
 |    |—— 06 Nested loop.pdf
 |    |—— solution_[1-18].c
+|—— String related problems
+|    |—— Strings.pdf
+|    |—— problem_[1-7].c
+|    |—— problem_[9-11].c
 |—— custom-calculator.c
 |—— switch-condition.c
 ```
