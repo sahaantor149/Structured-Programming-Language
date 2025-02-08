@@ -19,6 +19,15 @@ This repository contains various C programming exercises and solutions collected
 |—— Array
 |    |—— Array.pdf
 |    |—— solution_[1-21].c
+|—— Final Exam Question 232 CSE1112 B MiBa
+|    |—— Question.pdf
+|    |—— solution_[1-2].c
+|—— Final Exam Question 241 CSE1112 F KBJ
+|    |—— Question.pdf
+|    |—— solution_[1-2].c
+|—— Final Exam Question 242 CSE1112 I SYH
+|    |—— Question.pdf
+|    |—— solution_[1-2].c
 |—— Loop
 |    |—— Loop Problems.pdf
 |    |—— loop_solution_[1-20].c
