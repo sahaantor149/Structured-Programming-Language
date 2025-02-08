@@ -81,7 +81,7 @@ void addPatient(struct Patient patients[], int *count) {
 
     patients[*count] = p;
     (*count)++;
-    printf("\nPatient added successfully.\n");
+    printf("\nThe Patient added successfully.\n");
 }
 
 void searchPatient (struct Patient patients[], int count) {
@@ -116,7 +116,7 @@ void updatePatient (struct Patient patients[], int count) {
             printf("Enter new condition: ");
             scanf(" %[^\n]", patients[i].condition);
 
-            printf("\n Condition updated successfully.\n");
+            printf("\nCondition updated successfully.\n");
             found = 1;
             break;
         }

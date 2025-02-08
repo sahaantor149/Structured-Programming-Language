@@ -22,13 +22,13 @@ int main () {
 }
 
 int number_of_words (char str[]) {
-    int count = 0, in_word = 0;
+    int count = 0, inWord = 0;
 
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] == ' ') {
-            in_word = 0;
-        } else if (!in_word) {
-            in_word = 1;
+            inWord = 0;
+        } else if (!inWord) {
+            inWord = 1;
             count++;
         }
     }
